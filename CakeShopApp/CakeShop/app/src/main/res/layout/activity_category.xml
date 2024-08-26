@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:background="#977CC6"
+        android:text="Manage Category"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:text="Category cover"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryDes"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imvcover"
+        android:layout_width="315dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtncover"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/categoryNU"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Category Number"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/categoryNa"
+        android:layout_width="349dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Category Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/categoryNU"
+        app:layout_constraintTop_toBottomOf="@+id/categoryNU"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/categoryDes"
+        android:layout_width="332dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Category Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/categoryNa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/categoryNa"
+        app:layout_constraintTop_toBottomOf="@+id/categoryNa"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imvcover"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnvisite"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Visit" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtncover"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/categoryDes"
+        app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

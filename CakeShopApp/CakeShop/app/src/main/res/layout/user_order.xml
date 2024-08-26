@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp">
+
+        <ImageView
+            android:id="@+id/imvVOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/OrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvVOrder" />
+
+        <TextView
+            android:id="@+id/OrderNum"
+            android:layout_width="241dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imvVOrder"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/OrderName"
+            android:layout_width="242dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imvVOrder"
+            app:layout_constraintTop_toBottomOf="@+id/OrderNum" />
+
+
+        <TextView
+            android:id="@+id/OrderDes"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/OrderName"
+            app:layout_constraintTop_toBottomOf="@+id/OrderName" />
+
+        <TextView
+            android:id="@+id/OrderID"
+            android:layout_width="51dp"
+            android:layout_height="13dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/OrderDes"
+            app:layout_constraintTop_toTopOf="@+id/OrderDes"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/oderBtn"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="24dp"
+            android:text="Buy Now"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/OrderDes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/imvVCover"
+            android:layout_width="96dp"
+            android:layout_height="118dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cak"/>
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="252dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:hint="Category Name"
+            app:layout_constraintStart_toEndOf="@+id/imvVCover"
+            app:layout_constraintTop_toBottomOf="@+id/categoryNumber"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/categoryNumber"
+            android:layout_width="249dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:hint="Category Number"
+            app:layout_constraintStart_toEndOf="@+id/imvVCover"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/categoryDescription"
+            android:layout_width="249dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:hint="Category Description"
+            app:layout_constraintStart_toEndOf="@+id/imvVCover"
+            app:layout_constraintTop_toBottomOf="@+id/categoryName"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/ibtnEdit"
+            android:layout_width="48dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="@+id/categoryDescription"
+            app:layout_constraintTop_toBottomOf="@+id/categoryDescription"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/ibtnDelete"
+            android:layout_width="47dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/ibtnEdit"
+            app:layout_constraintTop_toBottomOf="@+id/categoryDescription"
+            app:srcCompat="@android:drawable/ic_menu_delete"/>
+
+        <TextView
+            android:id="@+id/txvID"
+            android:layout_width="79dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/ibtnDelete"
+            app:layout_constraintTop_toTopOf="@+id/ibtnDelete"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
